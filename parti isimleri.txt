@@ -1,0 +1,86 @@
+34020	Coalition of the Radical Left
+34210	Communist Party of Greece
+34211	Progressive Left Coalition
+34212	Coalition of the Radical Left
+34213	Democratic Left
+34214	Popular Unity
+34215	European Realistic Disobedience Front
+34313	Panhellenic Socialist Movement
+34315	PASOK – Movement for Change
+34340	The River
+34511	New Democracy
+34710	Popular Orthodox Rally
+34711	Greek Solution
+34720	Golden Dawn
+34730	Independent Greeks
+
+
+41113	Alliance‘90/Greens
+41221	Party of Democratic Socialism
+41222	The Left. Party of Democratic Socialism	
+41223	The Left
+41320	Social Democratic Party of Germany
+41420	Free Democratic Party
+41521	Christian Democratic Union/Christian Social Union
+41912	South Schleswig Voters’ Union
+41952	Pirates
+41953	Alternative for Germany
+
+
+51110	Green Party of England and Wales
+51210	We Ourselves
+51320	Labour Party
+51330	Social Democratic Party
+51340	Social Democratic and Labour Party
+51420	Liberal Party
+51421	Liberal Democrats
+51430	Alliance Party of Northern Ireland
+51620	Conservative Party	
+51621	Ulster Unionist Party
+51901	The Party of Wales
+51902	Scottish National Party
+51903	Democratic Unionist Party
+51951	United Kingdom Independence Party
+
+
+55110	Movement of Ecologists - Citizens' Cooperation
+55321	Progressive Party of the Working People
+55322	Social Democrats' Movement
+55340	Citizens' Alliance
+55422	Democratic Party
+55430	European Party
+55610	Solidarity Movement
+55711	Democratic Coalition
+55720	National Popular Front
+
+61320	Democratic Party
+61620	Republican Party
+
+
+74210	Peoples' Democratic Party
+74321	Republican People’s Party
+74325	Peace and Democracy Party
+74326	Democratic Society Party
+74628	Justice and Development Party
+74640	Good Party
+74710	Republican National Party
+74712	National Action Party
+74717	Felicity Party
+
+
+80061	Reformist bloc
+80062	Patriotic Front - NFSB and VMRO
+80071	United Patriots
+80220	Bulgarian Socialist Party
+80221	BSP for Bulgaria
+80330	Alternative for Bulgarian Revival
+80410	Union of Democratic Forces
+80510	Citizens for European Development of Bulgaria
+80630	Bulgaria without Censorship
+80640	Will
+80710	National Union Attack
+80811	People’s Union
+80951	Movement for Rights and Freedoms
+
+
+

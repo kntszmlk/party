@@ -1,0 +1,311 @@
+C:\Users\bilgisayar\PycharmProjects\ddiOdev\.venv\Scripts\python.exe C:\Users\bilgisayar\PycharmProjects\ddiOdev\kombPca.py 
+Vector_T5Vector_BERT oluşturuluyor...
+Vector_T5 ile Vector_BERT birleşimi tamamlandı. Veri kaybı oranı: %0.52
+Vector_T5Vector_DistilBERT oluşturuluyor...
+Vector_T5 ile Vector_DistilBERT birleşimi tamamlandı. Veri kaybı oranı: %0.58
+Vector_T5Vector_RoBERTa oluşturuluyor...
+Vector_T5 ile Vector_RoBERTa birleşimi tamamlandı. Veri kaybı oranı: %2.57
+Vector_T5Vector_ALBERT oluşturuluyor...
+Vector_T5 ile Vector_ALBERT birleşimi tamamlandı. Veri kaybı oranı: %0.97
+Vector_T5Vector_sBERTVector_BERT oluşturuluyor...
+Vector_T5 ile Vector_sBERTVector_BERT birleşimi tamamlandı. Veri kaybı oranı: %0.31
+Vector_T5Vector_sBERTVector_DistilBERT oluşturuluyor...
+Vector_T5 ile Vector_sBERTVector_DistilBERT birleşimi tamamlandı. Veri kaybı oranı: %0.39
+Vector_T5Vector_sBERTVector_RoBERTa oluşturuluyor...
+Vector_T5 ile Vector_sBERTVector_RoBERTa birleşimi tamamlandı. Veri kaybı oranı: %0.52
+Vector_T5Vector_sBERTVector_ALBERT oluşturuluyor...
+Vector_T5 ile Vector_sBERTVector_ALBERT birleşimi tamamlandı. Veri kaybı oranı: %0.44
+
+PCA ve Veri Kaybı Bilgileri:
+                    VectorColumn  LossPercentage
+0                    Vector_BERT        0.523210
+1              Vector_DistilBERT        0.579017
+2                 Vector_RoBERTa        2.571523
+3                  Vector_ALBERT        0.970083
+4        Vector_sBERTVector_BERT        0.313705
+5  Vector_sBERTVector_DistilBERT        0.391054
+6     Vector_sBERTVector_RoBERTa        0.516945
+7      Vector_sBERTVector_ALBERT        0.438005
+İşlem tamamlandı ve PCA bilgileri kaydedildi.
+
+Process finished with exit code 0
+C:\Users\bilgisayar\PycharmProjects\ddiOdev\.venv\Scripts\python.exe C:\Users\bilgisayar\PycharmProjects\ddiOdev\kMeansSVC.py 
+
+--- Vector_sBERTVector_BERT Sütunu İçin İşlem Başlıyor ---
+Cluster_Vector_sBERTVector_BERT sütunu zaten mevcut. Kümeleme atlanıyor.
+SVC_Vector_sBERTVector_BERT.pkl bulunamadı. Model eğitiliyor ve kaydediliyor...
+Model eğitildi.
+C:\Users\bilgisayar\PycharmProjects\ddiOdev\kMeansSVC.py:69: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  results_df = pd.concat([results_df, pd.DataFrame([row])], ignore_index=True)
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.95      0.94      0.94       784
+           1       0.96      0.98      0.97      2375
+           2       0.97      0.97      0.97      1633
+           3       0.98      0.98      0.98      2039
+           4       0.97      0.97      0.97      2161
+           5       0.96      0.97      0.96      2167
+           6       0.96      0.96      0.96      1778
+           7       0.95      0.94      0.95      1742
+           8       0.97      0.95      0.96      1754
+
+    accuracy                           0.96     16433
+   macro avg       0.96      0.96      0.96     16433
+weighted avg       0.96      0.96      0.96     16433
+
+Vector_sBERTVector_BERT - Silhouette Skoru: 0.0461
+Vector_sBERTVector_BERT - Davies-Bouldin Endeksi: 3.2271
+Vector_sBERTVector_BERT - Calinski-Harabasz Endeksi: 2890.9695
+
+--- Vector_T5Vector_BERT Sütunu İçin İşlem Başlıyor ---
+Cluster_Vector_T5Vector_BERT sütunu bulunamadı. Kümeler oluşturuluyor...
+Otomatik olarak belirlenen optimum küme sayısı: 8
+Vector_T5Vector_BERT için Optimum Küme Sayısı: 8
+Cluster_Vector_T5Vector_BERT sütunu veritabanına başarıyla kaydedildi.
+SVC_Vector_T5Vector_BERT.pkl bulunamadı. Model eğitiliyor ve kaydediliyor...
+Model eğitildi.
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.97      0.98      0.98      2067
+           1       0.97      0.97      0.97      2245
+           2       0.97      0.97      0.97      2504
+           3       0.96      0.96      0.96      1784
+           4       0.96      0.96      0.96      1918
+           5       0.98      0.97      0.97      1679
+           6       0.97      0.95      0.96      1864
+           7       0.96      0.97      0.97      2372
+
+    accuracy                           0.97     16433
+   macro avg       0.97      0.97      0.97     16433
+weighted avg       0.97      0.97      0.97     16433
+
+Vector_T5Vector_BERT - Silhouette Skoru: 0.0436
+Vector_T5Vector_BERT - Davies-Bouldin Endeksi: 3.3686
+Vector_T5Vector_BERT - Calinski-Harabasz Endeksi: 3088.6553
+
+--- Vector_T5Vector_DistilBERT Sütunu İçin İşlem Başlıyor ---
+Cluster_Vector_T5Vector_DistilBERT sütunu bulunamadı. Kümeler oluşturuluyor...
+Otomatik olarak belirlenen optimum küme sayısı: 10
+Vector_T5Vector_DistilBERT için Optimum Küme Sayısı: 10
+Cluster_Vector_T5Vector_DistilBERT sütunu veritabanına başarıyla kaydedildi.
+SVC_Vector_T5Vector_DistilBERT.pkl bulunamadı. Model eğitiliyor ve kaydediliyor...
+Model eğitildi.
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.95      0.96      0.96      1852
+           1       0.96      0.97      0.97      1932
+           2       0.95      0.97      0.96      1183
+           3       0.96      0.96      0.96      2097
+           4       0.96      0.95      0.95      2105
+           5       0.97      0.94      0.95      1502
+           6       1.00      0.98      0.99        55
+           7       0.95      0.95      0.95      1868
+           8       0.96      0.96      0.96      1812
+           9       0.95      0.95      0.95      2027
+
+    accuracy                           0.96     16433
+   macro avg       0.96      0.96      0.96     16433
+weighted avg       0.96      0.96      0.96     16433
+
+Vector_T5Vector_DistilBERT - Silhouette Skoru: 0.0308
+Vector_T5Vector_DistilBERT - Davies-Bouldin Endeksi: 3.9705
+Vector_T5Vector_DistilBERT - Calinski-Harabasz Endeksi: 1513.0283
+
+--- Vector_T5Vector_RoBERTa Sütunu İçin İşlem Başlıyor ---
+Cluster_Vector_T5Vector_RoBERTa sütunu bulunamadı. Kümeler oluşturuluyor...
+Otomatik olarak belirlenen optimum küme sayısı: 16
+Vector_T5Vector_RoBERTa için Optimum Küme Sayısı: 16
+Cluster_Vector_T5Vector_RoBERTa sütunu veritabanına başarıyla kaydedildi.
+SVC_Vector_T5Vector_RoBERTa.pkl bulunamadı. Model eğitiliyor ve kaydediliyor...
+Model eğitildi.
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.96      0.97      0.97       671
+           1       0.95      0.94      0.95      1235
+           2       0.95      0.97      0.96      1569
+           3       0.95      0.94      0.95       913
+           4       0.95      0.96      0.96      1104
+           5       0.94      0.96      0.95      2012
+           6       0.96      0.95      0.96      1166
+           7       0.95      0.92      0.93       636
+           8       0.96      0.97      0.96      1065
+           9       0.97      0.95      0.96      1694
+          10       1.00      1.00      1.00         9
+          11       1.00      0.94      0.97        48
+          12       0.97      0.95      0.96      1068
+          13       0.96      0.96      0.96      1688
+          14       0.94      0.94      0.94      1370
+          15       0.98      0.94      0.96       185
+
+    accuracy                           0.95     16433
+   macro avg       0.96      0.95      0.96     16433
+weighted avg       0.95      0.95      0.95     16433
+
+Vector_T5Vector_RoBERTa - Silhouette Skoru: 0.0351
+Vector_T5Vector_RoBERTa - Davies-Bouldin Endeksi: 3.0026
+Vector_T5Vector_RoBERTa - Calinski-Harabasz Endeksi: 1763.8135
+
+--- Vector_T5Vector_ALBERT Sütunu İçin İşlem Başlıyor ---
+Cluster_Vector_T5Vector_ALBERT sütunu bulunamadı. Kümeler oluşturuluyor...
+Otomatik olarak belirlenen optimum küme sayısı: 16
+Vector_T5Vector_ALBERT için Optimum Küme Sayısı: 16
+Cluster_Vector_T5Vector_ALBERT sütunu veritabanına başarıyla kaydedildi.
+SVC_Vector_T5Vector_ALBERT.pkl bulunamadı. Model eğitiliyor ve kaydediliyor...
+Model eğitildi.
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.96      0.95      0.96       562
+           1       0.95      0.97      0.96      1351
+           2       0.97      0.96      0.96      1139
+           3       0.96      0.98      0.97      1512
+           4       0.94      0.90      0.92       473
+           5       0.95      0.95      0.95      1328
+           6       0.96      0.95      0.96      1190
+           7       0.95      0.96      0.96      1458
+           8       0.94      0.95      0.95      1433
+           9       0.95      0.94      0.94      1121
+          10       0.97      0.96      0.97      1275
+          11       0.94      0.93      0.94      1241
+          12       0.96      0.95      0.95      1226
+          13       1.00      1.00      1.00         9
+          14       0.96      0.95      0.95      1061
+          15       1.00      0.91      0.95        54
+
+    accuracy                           0.95     16433
+   macro avg       0.96      0.95      0.96     16433
+weighted avg       0.95      0.95      0.95     16433
+
+Vector_T5Vector_ALBERT - Silhouette Skoru: 0.0388
+Vector_T5Vector_ALBERT - Davies-Bouldin Endeksi: 2.8645
+Vector_T5Vector_ALBERT - Calinski-Harabasz Endeksi: 1740.3960
+
+--- Vector_T5Vector_sBERTVector_BERT Sütunu İçin İşlem Başlıyor ---
+Cluster_Vector_T5Vector_sBERTVector_BERT sütunu bulunamadı. Kümeler oluşturuluyor...
+Otomatik olarak belirlenen optimum küme sayısı: 17
+Vector_T5Vector_sBERTVector_BERT için Optimum Küme Sayısı: 17
+Cluster_Vector_T5Vector_sBERTVector_BERT sütunu veritabanına başarıyla kaydedildi.
+SVC_Vector_T5Vector_sBERTVector_BERT.pkl bulunamadı. Model eğitiliyor ve kaydediliyor...
+Model eğitildi.
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.94      0.97      0.95       523
+           1       0.93      0.97      0.95       621
+           2       0.97      0.96      0.96       950
+           3       0.96      0.98      0.97       986
+           4       0.96      0.96      0.96      1182
+           5       0.94      0.96      0.95      1101
+           6       0.96      0.94      0.95      1251
+           7       0.93      0.95      0.94      1426
+           8       0.96      0.93      0.95       797
+           9       0.95      0.94      0.94      1048
+          10       0.96      0.95      0.96      1374
+          11       0.96      0.96      0.96      1092
+          12       0.96      0.94      0.95      1054
+          13       0.98      0.98      0.98        65
+          14       0.97      0.98      0.97       731
+          15       0.95      0.95      0.95      1129
+          16       0.96      0.94      0.95      1103
+
+    accuracy                           0.95     16433
+   macro avg       0.96      0.96      0.96     16433
+weighted avg       0.95      0.95      0.95     16433
+
+Vector_T5Vector_sBERTVector_BERT - Silhouette Skoru: 0.0442
+Vector_T5Vector_sBERTVector_BERT - Davies-Bouldin Endeksi: 3.1596
+Vector_T5Vector_sBERTVector_BERT - Calinski-Harabasz Endeksi: 1918.3051
+
+--- Vector_T5Vector_sBERTVector_DistilBERT Sütunu İçin İşlem Başlıyor ---
+Cluster_Vector_T5Vector_sBERTVector_DistilBERT sütunu bulunamadı. Kümeler oluşturuluyor...
+Otomatik olarak belirlenen optimum küme sayısı: 7
+Vector_T5Vector_sBERTVector_DistilBERT için Optimum Küme Sayısı: 7
+Cluster_Vector_T5Vector_sBERTVector_DistilBERT sütunu veritabanına başarıyla kaydedildi.
+SVC_Vector_T5Vector_sBERTVector_DistilBERT.pkl bulunamadı. Model eğitiliyor ve kaydediliyor...
+Model eğitildi.
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.97      0.97      0.97      2718
+           1       0.97      0.98      0.97      1929
+           2       0.96      0.96      0.96      2563
+           3       0.96      0.96      0.96      2050
+           4       0.97      0.98      0.97      2907
+           5       0.98      0.97      0.97      2264
+           6       0.97      0.96      0.96      2002
+
+    accuracy                           0.97     16433
+   macro avg       0.97      0.97      0.97     16433
+weighted avg       0.97      0.97      0.97     16433
+
+Vector_T5Vector_sBERTVector_DistilBERT - Silhouette Skoru: 0.0327
+Vector_T5Vector_sBERTVector_DistilBERT - Davies-Bouldin Endeksi: 3.9025
+Vector_T5Vector_sBERTVector_DistilBERT - Calinski-Harabasz Endeksi: 2378.2136
+
+--- Vector_T5Vector_sBERTVector_RoBERTa Sütunu İçin İşlem Başlıyor ---
+Cluster_Vector_T5Vector_sBERTVector_RoBERTa sütunu bulunamadı. Kümeler oluşturuluyor...
+Otomatik olarak belirlenen optimum küme sayısı: 8
+Vector_T5Vector_sBERTVector_RoBERTa için Optimum Küme Sayısı: 8
+Cluster_Vector_T5Vector_sBERTVector_RoBERTa sütunu veritabanına başarıyla kaydedildi.
+SVC_Vector_T5Vector_sBERTVector_RoBERTa.pkl bulunamadı. Model eğitiliyor ve kaydediliyor...
+Model eğitildi.
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.97      0.97      0.97      1674
+           1       0.96      0.97      0.96      2342
+           2       0.97      0.95      0.96      1871
+           3       0.97      0.97      0.97      2249
+           4       0.97      0.98      0.98      2495
+           5       0.96      0.97      0.96      1828
+           6       0.97      0.96      0.97      1903
+           7       0.98      0.98      0.98      2071
+
+    accuracy                           0.97     16433
+   macro avg       0.97      0.97      0.97     16433
+weighted avg       0.97      0.97      0.97     16433
+
+Vector_T5Vector_sBERTVector_RoBERTa - Silhouette Skoru: 0.0423
+Vector_T5Vector_sBERTVector_RoBERTa - Davies-Bouldin Endeksi: 3.3963
+Vector_T5Vector_sBERTVector_RoBERTa - Calinski-Harabasz Endeksi: 3007.5264
+
+--- Vector_T5Vector_sBERTVector_ALBERT Sütunu İçin İşlem Başlıyor ---
+Cluster_Vector_T5Vector_sBERTVector_ALBERT sütunu bulunamadı. Kümeler oluşturuluyor...
+Otomatik olarak belirlenen optimum küme sayısı: 7
+Vector_T5Vector_sBERTVector_ALBERT için Optimum Küme Sayısı: 7
+Cluster_Vector_T5Vector_sBERTVector_ALBERT sütunu veritabanına başarıyla kaydedildi.
+SVC_Vector_T5Vector_sBERTVector_ALBERT.pkl bulunamadı. Model eğitiliyor ve kaydediliyor...
+Model eğitildi.
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.97      0.96      0.96      2231
+           1       0.96      0.96      0.96      2639
+           2       0.97      0.97      0.97      2821
+           3       0.96      0.97      0.97      2137
+           4       0.97      0.97      0.97      2614
+           5       0.98      0.98      0.98      2124
+           6       0.97      0.97      0.97      1867
+
+    accuracy                           0.97     16433
+   macro avg       0.97      0.97      0.97     16433
+weighted avg       0.97      0.97      0.97     16433
+
+Vector_T5Vector_sBERTVector_ALBERT - Silhouette Skoru: 0.0381
+Vector_T5Vector_sBERTVector_ALBERT - Davies-Bouldin Endeksi: 3.6216
+Vector_T5Vector_sBERTVector_ALBERT - Calinski-Harabasz Endeksi: 2753.9678
+
+Process finished with exit code 0

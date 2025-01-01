@@ -1,0 +1,6 @@
+VectorColumn,LossPercentage
+Vector_BERT,0.00012516975
+Vector_DistilBERT,1.6021609
+Vector_RoBERTa,0.4812479
+Vector_ALBERT,1.4030814
+Vector_T5,0.5229652
